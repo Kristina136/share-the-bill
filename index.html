@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet"> 
+
+
+</head>
+<body>
+    
+<div class="container">
+   <div class="up"> 
+    <form>
+        <label>
+<div class="header">
+    <h1 class="head">Split a bill</h1>
+    <img class="wallet" src="wallet.png" alt="" width="50px" height="50px">
+</div>
+    <h2 class="head1">TOTAL BILL</h2>
+    <input class="inputBill" type="text" placeholder="add a tolat bill">
+
+    <h2 class="head2">HOW MANY PERSON?</h2>
+    <input class="inputPerson" type="text" placeholder="add a nomber of person">
+
+    <div class="tipContainer">
+    <h3 class="head3">ADD A TIPPS</h3>
+    <select id="tip">
+        <option disabled>ADD A TIPP</option>
+        <option value="0.10">10%</option>
+        <option value="0.20">20%</option>
+        <option value="0.30">30%</option>
+        <option  value="0.00">No tipp</option>
+    </select>
+   </div>
+<div id="btn">
+<button class="btn head4">CALKULATE</button>
+</div>
+</label>
+</form>
+
+</div>
+   <div class="down">
+    <div class="downRes head5">
+    <h2>Total with tips:</h2> <h2 class="res1"></h2>
+    </div>
+    <div class="downRes head6">
+    <h2>Bill per person:</h2> <h2 class="res2">50</h2>
+    </div>
+    <div class="downRes head7">
+    <h2>Tip per person:</h2> <h2 class="res3">5</h2>
+    </div>
+    <div class="downRes2 head8">
+    <h1>TOTAL PER PERSON:</h1> <h1 class="res4">55</h1>
+    </div>
+   </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
